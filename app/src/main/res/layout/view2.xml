@@ -8,6 +8,7 @@
     android:background="#e7e7e7">
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/view2_block-search"
         android:layout_width="345dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -34,21 +35,22 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/view2_search-icon"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_search_ico" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/view2_text-search"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Search recipes..." />
+                    android:text="Search recipes..."
+                    android:textColor="#76877E" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/view2_close"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -56,4 +58,186 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/view2_keywords-title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Popular Keywords"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2_block-search" />
+
+    <LinearLayout
+        android:id="@+id/view2_block-keyword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2_keywords-title">
+
+        <ImageView
+            android:id="@+id/view2_search-icon-breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_search_ico" />
+
+        <TextView
+            android:id="@+id/view2_breakfast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text='"breakfast"'
+            android:textColor="#76877E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view2_block-keyword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2_block-keyword1">
+
+        <ImageView
+            android:id="@+id/view2_search-icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_search_ico" />
+
+        <TextView
+            android:id="@+id/view2_avocado-salad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text='"avocado salad"'
+            android:textColor="#76877E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view2_block-keyword3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2_block-keyword2">
+
+        <ImageView
+            android:id="@+id/view2_search-icon-italian-food"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_search_ico" />
+
+        <TextView
+            android:id="@+id/view2_italian-food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text='"italian food"'
+            android:textColor="#76877E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view2_block-keyword4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2_block-keyword3">
+
+        <ImageView
+            android:id="@+id/view2_search-icon-dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_search_ico" />
+
+        <TextView
+            android:id="@+id/view2_dinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text='"dinner"'
+            android:textColor="#76877E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view2_block-keyword5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2_block-keyword4">
+
+        <ImageView
+            android:id="@+id/view2_search-icon-chinese-recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_search_ico" />
+
+        <TextView
+            android:id="@+id/view2_chinese-recipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text='"chinese recipe"'
+            android:textColor="#76877E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view2_block-keyword6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2_block-keyword5">
+
+        <ImageView
+            android:id="@+id/view2_search-icon-blueberry"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_search_ico" />
+
+        <TextView
+            android:id="@+id/view2_blueberry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text='"blueberry"'
+            android:textColor="#76877E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
